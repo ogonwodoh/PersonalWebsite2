@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="../css/main.css">
+	<body>
+
+		<!-- NAVIGATION BAR -->
+		<nav height="250%" class="w3-bar w3-black" style="position:fixed">
+			<a href="#home" class="w3-button w3-bar-item">Home</a>
+			<a href="#projects" class="w3-button w3-bar-item">Projects</a>
+			<a href="#notes" class="w3-button w3-bar-item">Class Notes</a>
+			<a href="../files/Resume.pdf" target="_blank" class="w3-button w3-bar-item">Resume</a>
+			<a href="#contact" class="w3-button w3-bar-item">Contact</a>
+		</nav>
+
+		<section>
+			<img class="mySlides" width="100%" src="../files/Ogo1.jpg">
+			<img class="mySlides" width="100%" src="../files/Ogo2.jpg">
+			<img class="mySlides" width="100%" src="../files/Ogo3.jpg">
+		</section>
+		
+		<section class="w3-container w3-center w3-content" style="max-width:600px">
+			<h2 id="home" class="w3-wide">WELCOME</h2>
+			<p class="w3-opacity"><i>A software developer with a passion for efficiency and teaching</i></p>
+
+			<section class="w3-container w3-content w3-center" style="max-width:600px">
+				<p class="w3-justify">My name is Ogo Nwodoh and I am currently a senior at Barnard College studying Computer Science. </p>
+				<p class="w3-justify">I am currently a TA at Columbia University for COMS 3134, Data Structures and Algorithms. I enjoy helping students learn fundamental concepts in computer science. Eventually, I hope to become a professor myself. </p>
+				<p class="w3-justify">I also enjoying building software to solve the issues, big or small, that I face in life. My favorite language to work in is Python because of the many great libraries such as Beautiful Soup and Sqlite that make it easy to pull and manipulate data. I am also very experienced with Java, including Java for Android. See my <a href="#projects" style="text-decoration:none; color:blue"> projects </a> to learn more about what I've done in these languages. </p>
+			</section>
+		</section>
+	
+
+
+	<section class="w3-row-padding w3-center w3-light-grey">
+		<h3 id="projects"> Projects </h3>
+		<article class="w3-third">
+			<h5>FindPUBG</h5>
+			<img src="../files/FindPUBG.jpg" style="width:100%">
+			<p align="left">FindPUBG is the first website that allows users to find teammates for the game PlayersUnknown Battegrounds. I am working on the project with 3 other people. It is built with Django. More information can be found <a href="https://github.com/caz2114/COMSW4156-ASE-Project" target="_blank" style="text-decoration:none; color:blue">here</a>.</p>			
+		</article>
+
+		<article class="w3-third">
+			<h5>SoundFlash</h5>
+			<video width="100%" controls>
+				<source src="../files/MusicFlashcards.mp4" type="video/mp4">
+			</video>
+			<p align="left">SoundFlash is an application that creates sound enabled flashcards. A user can add a song to the application and be quizzed on the name and composer of the song. This application was created to be uses in the class MUSIX 1001, An Introduction to Music at Barnard. More information can be found <a href="https://github.com/onwodoh/Music_Flashcards" target="_blank" style="text-decoration:none; color:blue">here</a>.</p>	
+		</article>
+		
+		<article class="w3-third">
+			<h5>Lazy Blogger</h5>
+			<img src="../files/LazyBlogger.jpg" style="width:100%">
+			<p align="left"></p>
+		</article>
+	</section>
+	</body>
+	<script>
+		
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}
+			x[myIndex-1].style.display = "block";
+			setTimeout(carousel, 3000);
+		}
+	</script>
+</html>

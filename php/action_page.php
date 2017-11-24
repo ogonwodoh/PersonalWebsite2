@@ -4,7 +4,7 @@
 	require_once "recaptchalib.php";
 
 	// your secret key
-	$secret = "6LeeMjoUAAAAAIm8tcDddNTgz2Qd14Hm4SZ6DGMy";
+	$secret = "6Lf7LDoUAAAAAF2r3jMOlM1TXKJLd_nbDzbU2kk1";
 	
 	// empty response
 	$response = null;

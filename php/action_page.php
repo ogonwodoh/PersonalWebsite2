@@ -31,14 +31,20 @@
 		if ($mail_sent == true){ ?>
         	<script language="javascript" type="text/javascript">
         		alert('Thank you for the message. I will contact you shortly.');
-        		window.location = '../html/index.html';
+        		window.location = '../#contact';
         	</script>
     	<?php } else { ?>
     		<script language="javascript" type="text/javascript">
         		alert('Message not sent.');
-        		window.location = '../html/index.html';
+        		window.location = '../#contact';
     		</script>
     	<?php
     	}
+	} else { ?>
+    	<script language="javascript" type="text/javascript">
+        	alert('Message not sent.');
+        	window.location = '../#contact';
+    	</script>
+    <?php
 	}
 ?>
